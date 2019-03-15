@@ -1,0 +1,76 @@
+.controlPanel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.addProject {
+  margin-left: auto;
+  width: 215px;
+  height: 36px;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 var(--black-12), 0 0 2px 0 var(--black-12);
+  background-color: #00aa87;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .7s;
+}
+
+.addProject:hover {
+  background-color: #00816c;
+}
+
+.searchPanel input {
+  width: 340px;
+  height: 40px;
+}
+
+.filter {
+  font-size: 1.1428em;
+  line-height: 1.5;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.searchPanel {
+  margin-right: 16px;
+}
+
+#filterOpen {
+  display: none;
+}
+
+#filterOpen + label {
+  margin: 0 0 0 25px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: #282828;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative;
+}
+
+#filterOpen + label:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background: url(../../Images/checkbox_normal.svg) no-repeat;
+  left: -25px;
+}
+
+#filterOpen + label:hover:before{
+  background: url(../../Images/checkbox_hover.svg) no-repeat;
+}
+
+#filterOpen:checked + label:before {
+  background: url(../../Images/checkbox_checked.svg) no-repeat;
+}

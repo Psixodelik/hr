@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic');
+@font-face {
+  font-family: 'AkzidenzGroteskPro-Md';
+  src: url(../../Font/AkzidenzGroteskPro-Md.ttf);
+}
+
+.hr-root {
+  width: 1024px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 48px;
+  position: relative;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}

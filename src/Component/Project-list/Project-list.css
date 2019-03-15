@@ -1,0 +1,158 @@
+.project-item {
+  font-family: Roboto;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  background-color: var(--white);
+  padding: 16px 24px 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  transition: box-shadow .7s;
+}
+
+.project-item:hover {
+  box-shadow: 0 8px 8px 0 var(--black-12), 0 0 8px 0 var(--black-12);
+}
+
+
+
+.project-item-name {
+  font-size: 1.64em;
+  margin: 0 0 0.5em;
+  line-height: 1.39;
+  color: var(--black-87);
+  font-weight: normal;
+  max-width: 615px;
+}
+
+.project-item-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.project-vacancy-count {
+  display: flex;
+  align-items: center;
+}
+
+.project-vacancy-count .count {
+  margin-right: 1em;
+  font-size: 1.14em;
+  line-height: 1.5;
+  color: var(--black-87);
+  cursor: pointer;
+}
+
+.project-vacancy-count .count:hover {
+  text-decoration: underline;
+}
+
+.project-vacancy-count .add .add-open {
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.5px;
+  color: var(--green-blue);
+  cursor: pointer;
+}
+
+.project-vacancy-count .add .add-open:hover {
+  color: #00816c;
+}
+
+.project-vacancy-count .add .add-close {
+  font-size: 0.9285em;
+  line-height: 1.23;
+  color: var(--black-57);
+  font-weight: 500;
+  position: relative;
+}
+
+
+
+.project-action {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.5px;
+  color: var(--black-37);
+}
+
+.project-action .closeProject:hover {
+  color: var(--black-47);
+}
+
+.actionOpen, .openProject {
+  color: var(--green-blue);
+}
+
+.actionOpen:hover,  .openProject:hover {
+  color: #00816c;
+}
+
+.vacancy-item {
+  padding: 1.1428em 0 0.8571em;
+  border-top: 1px solid var(--black-12);
+}
+
+.vacancy-item-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vacancy-status, .project-vacancy-count .add .add-close {
+  line-height: 1.23;
+  color: var(--black-57);
+  font-size: 0.9285em;
+  margin-left: 30px;
+  position: relative;
+}
+
+.vacancy-status:before, .add-close:before {
+  content: '';
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: -28px;
+}
+
+.vacancyOpen:before {
+  background: url(../../Images/search.svg) no-repeat;
+  background-size: contain;
+}
+
+.vacancyClose:before, .add-close:before {
+  background: url(../../Images/done.svg) no-repeat;
+  background-size: contain;
+}
+
+.vacancy-item-name {
+  color: var(--black-87);
+  font-size: 1.1428em;
+  margin-bottom: 5px;
+  line-height: 24px;
+}
+
+.vacancy-action {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.5px;
+  color: var(--black-37);
+}
+
+.project-action *, .vacancy-action * {
+  cursor: pointer;
+}
+
+.projectClose .project-item-name, .projectClose .project-vacancy-count .count {
+  color: var(--black-57);
+}
